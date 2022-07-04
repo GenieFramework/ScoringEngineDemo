@@ -1,7 +1,7 @@
 <div class="row">
     <div class="col col-4 col-sm">
         <h6>Feature</h6>
-        <q-select :options="features"></q-select>
+        <q-select :options="features" v-model="feature"></q-select>
     </div>
     <div class="col col-4 col-sm">
         <h6>Group Method</h6>
@@ -9,7 +9,7 @@
     </div>
     <div class="col col-4 col-sm">
         <h6>Sample Size</h6>
-        <q-slider></q-slider>
+        <q-slider v-model="sample_size" :min="10" :max="100"></q-slider>
     </div>
 </div>
 <div class="row">
