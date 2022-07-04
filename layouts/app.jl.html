@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <% Stipple.sesstoken() %>
+    <title>Hello Genie</title>
+    <% Genie.Assets.favicon_support() %>
+  </head>
+  <body>
+    <% page(model, partial = true, [@yield]) %>
+  </body>
+</html>
