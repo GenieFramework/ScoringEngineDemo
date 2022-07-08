@@ -1,1 +1,1 @@
-"/Users/abhi/.julia/juliaup/julia-1.8.0-beta3+0~aarch64/bin/julia" --color=yes --depwarn=no --project=@. -q -- "%~dp0..\bootstrap.jl" -r %*
+"/Users/abhi/.julia/juliaup/julia-1.7.3+0~x64/bin/julia" --color=yes --depwarn=no --project=@. -q -- "%~dp0..\bootstrap.jl" -r %*
