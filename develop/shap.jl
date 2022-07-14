@@ -18,7 +18,7 @@ const j_green = "#389826"
 const j_purple = "#9558B2"
 const j_red = "#CB3C33"
 
-const assets_path = joinpath(pkgdir(ScoringEngineDemo), "assets")
+const assets_path = joinpath(pkgdir(ScoringEngines), "assets")
 
 # const df_tot = ScoringEngineEntry.load_data("assets/training_data.csv")
 df_tot = begin

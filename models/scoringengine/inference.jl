@@ -1,4 +1,4 @@
-const assets_path = joinpath(pkgdir(ScoringEngineDemo), "assets")
+const assets_path = joinpath(pkgdir(ScoringEngines), "assets")
 
 # const preproc_flux = BSON.load(joinpath(assets_path, "preproc-flux.bson"), @__MODULE__)[:preproc]
 # const preproc_gbt = BSON.load(joinpath(assets_path, "preproc-gbt.bson"), @__MODULE__)[:preproc]

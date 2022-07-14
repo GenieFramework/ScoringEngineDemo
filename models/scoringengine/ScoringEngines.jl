@@ -29,6 +29,8 @@ const j_green = "#389826"
 const j_purple = "#9558B2"
 const j_red = "#CB3C33"
 
+@info "Inside scoringengine/ScoringEngines.jl before all includes"
+
 include("preproc-utils.jl")
 include("preproc.jl")
 include("model.jl")
@@ -36,5 +38,7 @@ include("model.jl")
 include("inference.jl")
 include("plots.jl")
 include("explain.jl")
+
+@info "Inside scoringengine/ScoringEngines.jl after all includes"
 
 end
