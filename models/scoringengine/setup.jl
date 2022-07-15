@@ -1,14 +1,21 @@
 @info "Initializing assets inside assets setup.jl"
-@info "pkgdir(ScoringEngineDemo): " pkgdir(ScoringEngines)
+@info "pkgdir(ScoringEngine): " pkgdir(ScoringEngines)
+
+@info "before include scoringengines.jl"
+include("ScoringEngines.jl")
+
+@info "----- is scoring engine included", ScoringEngines.get_shap_explain
 
 const j_blue = "#4063D8"
 const j_green = "#389826"
 const j_purple = "#9558B2"
 const j_red = "#CB3C33"
 
-const assets_path = joinpath(pkgdir(ScoringEngines), "assets")
+@info "Directly to check where assets are: ", joinpath(@__DIR__, "../../assets")
+const assets_path = joinpath(@__DIR__, "../../assets")
 
-# const df_tot = ScoringEngineDemo.load_data("assets/training_data.csv")
+@info "after assets setup.jl"
+
 df_tot = begin
     df_tot = ScoringEngines.load_data(joinpath(assets_path, "training_data.csv"))
     transform!(df_tot, "claim_amount" => ByRow(x -> x > 0 ? 1.0f0 : 0.0f0) => "event")

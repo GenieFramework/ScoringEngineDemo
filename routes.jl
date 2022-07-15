@@ -30,7 +30,7 @@ using Statistics: mean, std
 
 
 include("models/scoringengine/ScoringEngines.jl")
-# include("models/scoringengine/setup.jl")
+include("models/scoringengine/setup.jl")
 
 
 Page("/", view = "views/hello.jl.html",
