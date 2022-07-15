@@ -1,5 +1,5 @@
 @info "Initializing assets inside assets setup.jl"
-@info "pkgdir(ScoringEngine): " pkgdir(ScoringEngines)
+# @info "pkgdir(ScoringEngine): " pkgdir(ScoringEngineDemo)
 
 @info "before include scoringengines.jl"
 include("ScoringEngines.jl")
